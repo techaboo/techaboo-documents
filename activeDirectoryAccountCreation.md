@@ -1,4 +1,6 @@
-```PowerShell
+# Copy Active Directory User
+
+```powershell
 # Import Active Directory module
 Import-Module ActiveDirectory
 
@@ -37,6 +39,3 @@ $NewUsername = "operationtest@vasohealthcare.com"
 $NewUserPassword = "Operation2024!"
 
 Copy-ADUser -SourceUsername $SourceUsername -NewUsername $NewUsername -NewUserPassword $NewUserPassword
-```
-
-⧉ Copied!
