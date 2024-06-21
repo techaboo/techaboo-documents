@@ -1,6 +1,6 @@
 # Copy Active Directory User
 
-```
+```powershell
 # Import Active Directory module
 Import-Module ActiveDirectory
 
