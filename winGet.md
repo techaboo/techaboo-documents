@@ -8,3 +8,4 @@ winget install gerardog.gsudo
 ```
 gsudo winget upgrade --all
 ```
+```
