@@ -1,4 +1,5 @@
 # Copy Active Directory User
+## This script was created for copying a full account from AD/Azure
 
 ```powershell
 # Import Active Directory module
