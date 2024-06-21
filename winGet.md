@@ -1,3 +1,4 @@
+# WinGet Update Script
 ```PowerShell
 
 # Install gsudo using winget:
