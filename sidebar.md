@@ -1,4 +1,4 @@
 * [Home](/)
 * [Introduction](introduction.md)
-* [Readme](read.md)
+* [Readme](readme.md)
 * [Futuristic Features](futuristic-features.md)
