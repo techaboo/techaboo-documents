@@ -1,5 +1,5 @@
 ```PowerShell
-```
+
 # Install gsudo using winget:
 ```
 winget install gerardog.gsudo
@@ -8,4 +8,4 @@ winget install gerardog.gsudo
 ```
 gsudo winget upgrade --all
 ```
-```
+
