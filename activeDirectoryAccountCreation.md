@@ -39,4 +39,5 @@ $NewUsername = "operationtest@vasohealthcare.com"
 $NewUserPassword = "Operation2024!"
 
 Copy-ADUser -SourceUsername $SourceUsername -NewUsername $NewUsername -NewUserPassword $NewUserPassword
+```powershell
 
