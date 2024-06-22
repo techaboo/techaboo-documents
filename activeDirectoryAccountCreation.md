@@ -34,9 +34,9 @@ function Copy-ADUser {
 }
 
 # Copy AD user
-$SourceUsername = "aabdulkadir@vasohealthcare.com"
-$NewUsername = "operationtest@vasohealthcare.com"
-$NewUserPassword = "Operation2024!"
+$SourceUsername = ""
+$NewUsername = ""
+$NewUserPassword = ""
 
 Copy-ADUser -SourceUsername $SourceUsername -NewUsername $NewUsername -NewUserPassword $NewUserPassword
 ```powershell
