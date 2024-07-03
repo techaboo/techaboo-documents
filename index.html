@@ -7,19 +7,60 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #000428, #004e92);
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #app {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      padding: 20px;
+      box-sizing: border-box;
     }
     .markdown-body img {
       display: block;
-      margin: 0 auto;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
     }
     .robot-img {
       width: 300px;
       height: auto;
       margin: 20px auto;
       display: block;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    p {
+      line-height: 1.6;
+    }
+    a {
+      color: #00c6ff;
+    }
+    .sidebar {
+      background-color: rgba(15, 32, 39, 0.9);
+    }
+    .sidebar-nav a {
+      color: #ffffff;
+    }
+    .sidebar-nav .active a {
+      color: #00c6ff;
+    }
+    .sidebar-toggle {
+      color: #ffffff;
+    }
+    .app-name {
+      color: #00c6ff;
     }
   </style>
 </head>
@@ -31,15 +72,16 @@
       repo: '',
       loadSidebar: true,
       subMaxLevel: 2,
-      themeColor: '#004e92'
+      themeColor: '#00c6ff',
+      coverpage: true,
+      auto2top: true,
+      executeScript: true,
     }
   </script>
-  <!-- Latest v2.x.x --><script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-<script src="https://unpkg.com/docsify-copy-code"></script>  
+  <script src="https://unpkg.com/docsify-copy-code"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-powershell.min.js"></script>
-  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1bf0dd9fdde34a1e85142f2591ef9e86"}'></script><!-- End Cloudflare Web Analytics -->
-  
-  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1bf0dd9fdde34a1e85142f2591ef9e86"}'></script>
 </body>
 </html>
