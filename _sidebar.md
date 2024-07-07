@@ -2,4 +2,4 @@
 * [Active Directory Account Creation](activeDirectoryAccountCreation.md)
 * [Winget Update](winGet.md)
 * [Install RSAT](installRSAT.md)
-* [Uninstall_Reinstall Choclatey](Uninstall_Reinstall Choclatey.md)
+* [Uninstall_Reinstall Choclatey]()
