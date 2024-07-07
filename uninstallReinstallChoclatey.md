@@ -6,7 +6,7 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 
 
 # Uninstall Chocolatey from your system
-`$chocoPath = "$env:ChocolateyInstall"
+```$chocoPath = "$env:ChocolateyInstall"
 if ($chocoPath -ne $null -and $chocoPath -ne '') {
     # Remove Chocolatey environment variables
     [System.Environment]::SetEnvironmentVariable('ChocolateyInstall', $null, [System.EnvironmentVariableTarget]::Machine)
@@ -23,4 +23,4 @@ if ($chocoPath -ne $null -and $chocoPath -ne '') {
 } else {
     Write-Host "Chocolatey is not installed."
 }
-`
+```
