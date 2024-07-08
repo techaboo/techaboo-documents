@@ -19,10 +19,10 @@ if ($chocoPath -ne $null -and $chocoPath -ne '') {
 
     # Delete the Chocolatey directory
     Remove-Item -Recurse -Force "$chocoPath"
-```PowerShell
+
     
     Write-Host "Chocolatey has been uninstalled."
 } else {
     Write-Host "Chocolatey is not installed."
 }
-```
+
