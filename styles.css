@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #00c6ff;
+    --primary-color: #00c6ff; /* Bright primary color */
+    --secondary-color: #ff4081; /* Optional: Secondary accent color */
     --background-gradient: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     --sidebar-bg: rgba(15, 32, 39, 0.9);
+    --card-bg: rgba(255, 255, 255, 0.1); /* Slightly transparent card background */
+    --text-color: #ffffff; /* Text color */
+    --heading-color: #00c6ff; /* Heading color */
+    --border-radius: 12px; /* Increased border radius for a softer look */
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    --transition-speed: 0.4s; /* Transition speed for hover effects */
+    --cursor-pointer: cursor: pointer; /* Pointer for clickable elements */
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background: var(--background-gradient);
-    color: #ffffff;
+    color: var(--text-color);
     margin: 0;
     padding: 0;
     display: flex;
@@ -27,11 +35,25 @@ body {
     box-sizing: border-box;
 }
 
+.markdown-body {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Blur effect for a more modern look */
+}
+
 .markdown-body img {
     display: block;
     margin: 20px auto;
     max-width: 100%;
     height: auto;
+    border-radius: var(--border-radius); /* Rounded images */
+    transition: transform var(--transition-speed); /* Add hover effect */
+}
+
+.markdown-body img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .robot-img {
@@ -39,39 +61,74 @@ body {
     height: auto;
     margin: 20px auto;
     display: block;
+    border-radius: var(--border-radius); /* Rounded robot image */
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-speed); /* Add hover effect */
+}
+
+.robot-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: bold;
+    color: var(--heading-color);
+    margin-bottom: 10px; /* Spacing below headings */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
 }
 
 p {
     line-height: 1.6;
+    margin-bottom: 15px; /* Spacing below paragraphs */
 }
 
 a {
     color: var(--primary-color);
+    text-decoration: none; /* Remove underline */
+    transition: color var(--transition-speed), transform var(--transition-speed); /* Smooth color transition */
+}
+
+a:hover {
+    color: var(--secondary-color); /* Hover effect for links */
+    transform: translateY(-2px); /* Slight lift on hover */
 }
 
 .sidebar {
     background-color: var(--sidebar-bg);
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+    border-radius: var(--border-radius);
 }
 
 .sidebar-nav a {
     color: #ffffff;
+    transition: color var(--transition-speed); /* Smooth color transition */
+}
+
+.sidebar-nav a:hover {
+    color: var(--primary-color); /* Hover effect for sidebar links */
 }
 
 .sidebar-nav .active a {
     color: var(--primary-color);
+    font-weight: bold; /* Emphasize active link */
 }
 
 .sidebar-toggle {
     color: #ffffff;
+    transition: transform var(--transition-speed); /* Smooth transition */
+}
+
+.sidebar-toggle:hover {
+    transform: scale(1.1); /* Scale up on hover */
 }
 
 .app-name {
     color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem; /* Increased font size for app name */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
 }
 
 .markdown-body pre {
@@ -79,7 +136,21 @@ a {
     overflow-y: auto;
     font-family: 'Fira Code', monospace;
     background-color: #2c3e50;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: var(--border-radius);
     max-height: none; /* Remove height restriction */
+    box-shadow: var(--box-shadow); /* Add shadow for depth */
+    position: relative; /* For positioning */
+}
+
+.markdown-body pre::before {
+    content: "Code Block"; /* Optional label */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
 }
