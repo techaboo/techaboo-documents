@@ -7,9 +7,10 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 ```
-```
-## Uninstall Chocolatey from your system
+## Remove Chocolatey
 ```powershell
+## Uninstall Chocolatey from your system
+
 $chocoPath = "$env:ChocolateyInstall"
 if ($chocoPath -ne $null -and $chocoPath -ne '') {
     # Remove Chocolatey environment variables
@@ -27,6 +28,7 @@ if ($chocoPath -ne $null -and $chocoPath -ne '') {
 } else {
     Write-Host "Chocolatey is not installed."
 }
-```
+
+
 
 
