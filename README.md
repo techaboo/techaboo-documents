@@ -1,5 +1,5 @@
 # techaboo-documents
-This was created by Andrew Shannon for the purpose of research and study.
+This repository was created by Andrew Shannon for research and study purposes.
 
 ## Table of Contents
 - [techaboo-documents](#techaboo-documents)
@@ -27,4 +27,3 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-

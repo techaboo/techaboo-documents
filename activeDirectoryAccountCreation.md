@@ -39,5 +39,5 @@ $NewUsername = ""
 $NewUserPassword = ""
 
 Copy-ADUser -SourceUsername $SourceUsername -NewUsername $NewUsername -NewUserPassword $NewUserPassword
-
+```powershell
 
