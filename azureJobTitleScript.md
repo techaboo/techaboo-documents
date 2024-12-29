@@ -1,15 +1,13 @@
-# Install the module if you haven't already
-```powershell
-Install-Module AzureAD
+# Azure Job Title trigger for old sec groups
 
-# Connect to Azure AD
-```powershell
-Connect-AzureAD
+1. First install the AzureAD module: ```Install-Module AzureAD```
 
-# Get the group object
-```powershell
-$group = Get-AzureADGroup -Filter "DisplayName eq 'VHC_O365_E1'"
 
-# Get the members of the group and their job titles
-```powershell
-Get-AzureADGroupMember -ObjectId $group.ObjectId | Select-Object DisplayName, JobTitle
+
+
+2. Second connect to the AzureAD module: ```Connect-AzureAD```
+
+
+3. Change the "VHC_0365_E1": ```$group = Get-AzureADGroup -Filter "DisplayName eq 'VHC_O365_E1'"```
+
+4. This will bring the result: ```Get-AzureADGroupMember -ObjectId $group.ObjectId | Select-Object DisplayName, JobTitle```

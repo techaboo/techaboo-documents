@@ -4,3 +4,4 @@
 * [Install RSAT](installRSAT.md)
 * [Uninstall_Reinstall Choclatey](uninstallReinstallChoclatey.md)
 * [Azure Job Title Script](azureJobTitleScript.md)
+* [linux Ubuntu Server Configuration](linuxUbuntuScript.md)
