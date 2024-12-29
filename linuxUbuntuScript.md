@@ -65,8 +65,8 @@ unmanaged-devices=none
 EOF'
 # Set Cockpit password for a user
 echo "Setting Cockpit password..."
-COCKPIT_USER="azcdxprod"  # Replace with the desired username
-COCKPIT_PASSWORD="osavo105115!"  # Replace with the desired password
+COCKPIT_USER="{Insert username}"  # Replace with the desired username
+COCKPIT_PASSWORD="{insert password}"  # Replace with the desired password
 
 # Check if user exists; if not, create it
 if id "$COCKPIT_USER" &>/dev/null; then
@@ -164,7 +164,7 @@ sudo bash -c 'cat > /etc/monit/monitrc << EOF
 set httpd port 2812 and
     use address localhost
     allow localhost
-    allow azcdxprod:osavo105115
+    allow azcdxprod:{Insert Password}
 
 check process postgresql with pidfile /var/run/postgresql/postmaster.pid
     start program = "/usr/lib/postgresql/15/bin/postgres -D /var/lib/postgresql/15/main"
