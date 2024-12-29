@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #00c6ff;
+    --background-gradient: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    --sidebar-bg: rgba(15, 32, 39, 0.9);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--background-gradient);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto; /* Allow scrolling */
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.markdown-body img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.robot-img {
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+.sidebar {
+    background-color: var(--sidebar-bg);
+}
+
+.sidebar-nav a {
+    color: #ffffff;
+}
+
+.sidebar-nav .active a {
+    color: var(--primary-color);
+}
+
+.sidebar-toggle {
+    color: #ffffff;
+}
+
+.app-name {
+    color: var(--primary-color);
+}
+
+.markdown-body pre {
+    overflow-x: auto;
+    overflow-y: auto;
+    font-family: 'Fira Code', monospace;
+    background-color: #2c3e50;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: none; /* Remove height restriction */
+}
