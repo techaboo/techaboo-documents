@@ -154,3 +154,32 @@ a:hover {
     border-radius: var(--border-radius);
     font-size: 0.8rem;
 }
+
+footer {
+    background-color: rgba(15, 32, 39, 0.9); /* Matches sidebar background */
+    color: var(--text-color);
+    padding: 20px 0; /* Vertical padding for footer */
+    text-align: center; /* Center-align text */
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3); /* Shadow for separation */
+    position: relative; /* Stack footer above content */
+}
+
+.footer-content {
+    max-width: 800px; /* Limit the width of the footer content */
+    margin: 0 auto; /* Center the footer content */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.footer-content p {
+    margin: 0; /* Remove default margin */
+}
+
+.footer-content a {
+    color: var(--primary-color); /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.footer-content a:hover {
+    color: var(--secondary-color); /* Change color on hover */
+}
