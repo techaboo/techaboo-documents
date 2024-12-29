@@ -3,4 +3,4 @@
 * [Winget Update](winGet.md)
 * [Install RSAT](installRSAT.md)
 * [Uninstall_Reinstall Choclatey](uninstallReinstallChoclatey.md)
-* [Azure Job Title Script](azureJobTitleScript)
+* [Azure Job Title Script](azureJobTitleScript.md)
