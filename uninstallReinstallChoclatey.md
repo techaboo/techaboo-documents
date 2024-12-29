@@ -8,9 +8,7 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 
 ```
 ```
-
-## Uninstall/Reinstall
-
+## Uninstall Chocolatey from your system
 ```powershell
 $chocoPath = "$env:ChocolateyInstall"
 if ($chocoPath -ne $null -and $chocoPath -ne '') {
@@ -19,15 +17,16 @@ if ($chocoPath -ne $null -and $chocoPath -ne '') {
     
     # Remove Chocolatey from the path
     $path = [Environment]::GetEnvironmentVariable('Path', [EnvironmentVariableTarget]::Machine)
-    $newPath = ($path.Split(';') | Where-Object { $_ -notlike "*chocolatey*" }) -join ';'
-    [Environment]::SetEnvironmentVariable('Path', $newPath, [EnvironmentVariableTarget]::Machine)
-
+    $newPath = $path -split ';' | Where-Object { $_ -notlike "*Chocolatey*" } -join ';'
+    [System.Environment]::SetEnvironmentVariable('Path', $newPath, [System.EnvironmentVariableTarget]::Machine)
+    
     # Delete the Chocolatey directory
     Remove-Item -Recurse -Force "$chocoPath"
-
     
     Write-Host "Chocolatey has been uninstalled."
 } else {
     Write-Host "Chocolatey is not installed."
 }
+```
+
 
