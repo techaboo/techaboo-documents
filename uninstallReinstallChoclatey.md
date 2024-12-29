@@ -1,6 +1,6 @@
 # Install/Reinstall Chocolatey
-## Reinstall Chocolatey on your system
 
+## Install Chocolatey
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
