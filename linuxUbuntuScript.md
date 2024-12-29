@@ -1,3 +1,4 @@
+```shell
 #!/bin/bash
 
 # Exit on error

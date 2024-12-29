@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;700&display=swap');
     body {
       font-family: 'Roboto', sans-serif;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
@@ -63,6 +63,13 @@
     .app-name {
       color: #00c6ff;
     }
+    .markdown-body pre {
+      overflow-x: auto;
+      font-family: 'Fira Code', monospace;
+      background-color: #2c3e50;
+      padding: 10px;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
@@ -77,12 +84,18 @@
       coverpage: true,
       auto2top: true,
       executeScript: true,
+      search: 'auto',
+      pagination: {
+        previousText: 'Previous',
+        nextText: 'Next',
+        crossChapter: true,
+        crossChapterText: true,
+      },
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script src="https://unpkg.com/docsify-copy-code"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-powershell.min.js">
-    </script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-powershell.min.js"></script>
 </body>
 </html>
