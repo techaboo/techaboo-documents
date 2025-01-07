@@ -17,3 +17,4 @@ Run the following command to install Microsoft Teams using Chocolatey:
 
 ```powershell
 choco install microsoft-teams -y
+```
