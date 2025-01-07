@@ -15,6 +15,5 @@ To install Microsoft Teams, you need to run PowerShell with administrative privi
 ### Step 2: Install Microsoft Teams
 Run the following command to install Microsoft Teams using Chocolatey:
 
-```powershell
-choco install microsoft-teams -y
-```
+
+'choco install microsoft-teams -y'
