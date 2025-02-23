@@ -6,3 +6,5 @@
 * [Azure Job Title Script](azureJobTitleScript.md)
 * [linux Ubuntu Server Configuration](linuxUbuntuScript.md)
 * [AD FSMO Role Check](adfsmoholdercheck.md)
+* [Install Microsoft Teams](installTeams.md)
+* [iPhone Encryption Instructions](iphoneEncryption.md)
