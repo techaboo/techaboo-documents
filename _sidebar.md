@@ -4,6 +4,7 @@
 * [Install RSAT](installRSAT.md)
 * [Uninstall_Reinstall Choclatey](uninstallReinstallChoclatey.md)
 * [Azure Job Title Script](azureJobTitleScript.md)
+* [Azure Resource Dormancy Scanner](AzureResourceUsageScript.md)
 * [linux Ubuntu Server Configuration](linuxUbuntuScript.md)
 * [AD FSMO Role Check](adfsmoholdercheck.md)
 * [Install Microsoft Teams](installTeams.md)
